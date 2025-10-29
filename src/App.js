@@ -74,7 +74,7 @@ function App() {
     e.preventDefault();
     if (!Title || !Content || !Author) return;
 
-    const blog = { id: Id, title: Title, content: Content, author: Author };
+    const blog = { title: Title, content: Content, author: Author };
 
     if (isEditing) {
       await updateBlog(Id, blog);
@@ -89,7 +89,6 @@ function App() {
   const handleEdit = (blog) => {
     setShowForm(true);
     setIsEditing(true);
-    setId(blog.id);
     setTitle(blog.title);
     setContent(blog.content);
     setAuthor(blog.author);
