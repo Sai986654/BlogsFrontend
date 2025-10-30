@@ -116,7 +116,7 @@ function App() {
           ) : (
             blogs.map((blog) => (
               <div key={blog.id} style={{ marginBottom: "20px" }}>
-                <h3>{blog.Id}{". "}{blog.title}</h3>
+                <h3>{blog.id}{". "}{blog.title}</h3>
                 <p>{blog.content}</p>
                 <small>
                   By {blog.author} |{" "}
