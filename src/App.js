@@ -9,7 +9,7 @@ function App() {
   const [Content, setContent] = useState("");
   const [Author, setAuthor] = useState("");
 
-  const API_URL = "https://localhost:7245/blogs";
+  const API_URL = "https://blogmanagement20251030162139-caezbph2cjgedqe3.canadacentral-01.azurewebsites.net/blogs";
 
   useEffect(() => {
     fetchBlogs();
